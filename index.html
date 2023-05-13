@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bona's Site</title>
+</head>
+<body>
+    <header>
+        <a id="home" href="index.html">home</a>
+        <div id="main_img">
+            <img src="image/main_header.jpg" alt="" width="600" height="200" onmouseover="changeImage('image/night_sky.jpg')" onmouseout="changeImage('image/main_header.jpg')">
+            <h1 id="main_title">보물같이 빛나는 나를 찾는 시간</h1>
+        </div>
+    </header>
+    <main>
+        <div class="grid">
+            <div class="목차">
+                <h3><a href="about.html">❤️ About Bona</a></h3>
+                <a href="interests.html"><h3>❤️ Bona's Interests</h3></a>
+                <a href="favorites.html"><h3>❤️ Bona's Favorites</h3></a>
+            </div>
+            <div class="내용">
+                <p>
+                    hello
+                </p>                
+            </div>
+        </div>
+    </main>
+    <p>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://aboutme-12.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
+    <footer>
+        made by bona
+    </footer>
+</body>    
+<script>
+    function changeImage(newImage) {
+        var imageElement = document.querySelector('#main_img img');
+        imageElement.src = newImage;
+    }
+</script>
+</html>
